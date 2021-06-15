@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Settings</title>
+	</head>
+	<body>
+		<header>
+			<div class="head-div">
+				<img src="./assets/icon.svg" alt="" />
+				<h1>Settings</h1>
+			</div>
+			<div class="head-div">
+				<a href="/order-center.html"><p>Order Center</p></a>
+				<a href="/item.html"><p>Item</p></a>
+				<a href="/settings.html"><p>Settings</p></a>
+			</div>
+		</header>
+		<!-- <nav>Page Name > Page Name > Page Name > Page Name</nav> -->
+		<section class="aside-and-main">
+			<aside>
+				<h2>Aside</h2>
+			</aside>
+			<main>
+				<h2>Main</h2>
+				<form>
+					<div>
+						<label for="cvc"
+							>Enter your CVC
+							<popup-info
+								img="./assets/icon.svg"
+								data-text="Your card validation code (CVC) is an extra security feature — it is the last 3 or 4 numbers on the back of your card."
+							></popup-info
+						></label>
+						<input type="text" id="cvc" />
+					</div>
+				</form>
+			</main>
+		</section>
+		<script src="main.js"></script>
+	</body>
+</html>
