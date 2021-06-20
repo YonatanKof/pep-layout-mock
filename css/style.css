@@ -178,12 +178,14 @@ section {
   height: calc(100vh - var(--header-h));
 }
 
-section h1, section h2 {
+section h1, section h2, section p {
   margin-bottom: 0.5em;
 }
 
 section nav {
   background-color: tan;
+  font-size: 0.95em;
+  color: rgba(0, 0, 0, 0.75);
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -280,12 +282,20 @@ li {
   opacity: 0.75;
 }
 
+p {
+  font-size: 1.125em;
+}
+
 form {
   margin-bottom: 0.75em;
 }
 
 hr {
   margin-block: 0.75em;
+}
+
+strong {
+  font-weight: bolder;
 }
 
 .head-div {

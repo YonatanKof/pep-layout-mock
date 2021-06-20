@@ -10,21 +10,25 @@ img {
 }
 h1 {
 	font-size: 2em;
-	// margin-bottom: 0.5em;
 }
 h2 {
 	font-size: 1.5em;
-	// margin-bottom: 0.5em;
 }
 li {
 	margin-bottom: 0.25em;
 	opacity: 0.75;
+}
+p {
+	font-size: 1.125em;
 }
 form {
 	margin-bottom: 0.75em;
 }
 hr{
 	margin-block: 0.75em;
+}
+strong{
+	font-weight: bolder;
 }
 .head-div {
 	display: flex;

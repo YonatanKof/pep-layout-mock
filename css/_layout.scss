@@ -20,13 +20,15 @@ header {
 	height: var(--header-h);
 }
 section {
-	h1, h2 {
+	h1, h2, p {
 		margin-bottom: 0.5em;
 	}
 	display: grid;
 	height: calc(100vh - var(--header-h));
 	nav {
 		background-color: tan;
+		font-size: 0.95em;
+		color: rgba(#000000, 0.75);
 		grid-area: navbar;
 	}
 	aside {
