@@ -178,6 +178,10 @@ section {
   height: calc(100vh - var(--header-h));
 }
 
+section h1, section h2 {
+  margin-bottom: 0.5em;
+}
+
 section nav {
   background-color: tan;
   -ms-grid-row: 1;
@@ -265,12 +269,10 @@ img {
 
 h1 {
   font-size: 2em;
-  margin-bottom: 0.5em;
 }
 
 h2 {
   font-size: 1.5em;
-  margin-bottom: 0.5em;
 }
 
 li {

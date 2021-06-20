@@ -20,6 +20,9 @@ header {
 	height: var(--header-h);
 }
 section {
+	h1, h2 {
+		margin-bottom: 0.5em;
+	}
 	display: grid;
 	height: calc(100vh - var(--header-h));
 	nav {
