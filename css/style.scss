@@ -44,3 +44,16 @@ strong{
 		width: 75%;
 	}
 }
+.yo-short{
+	margin-bottom: 0.75em;
+	aspect-ratio: 16 / 2;
+	background-color: brown;
+	transition: aspect-ratio 1s ease-out, ;
+	&:hover{
+		aspect-ratio: 16 / 2.4;
+	}
+}
+.yo-long{
+	aspect-ratio: 16 / 4;
+	background-color: chocolate;
+}

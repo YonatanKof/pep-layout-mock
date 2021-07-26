@@ -189,13 +189,13 @@ section nav {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: navbar;
+  grid-area: ga-navbar;
 }
 
 section aside {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: aside;
+  grid-area: ga-aside;
   background-color: tomato;
   min-width: 10em;
   overflow: auto;
@@ -210,8 +210,7 @@ section aside {
 section main {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: main;
-  overflow: hidden;
+  grid-area: ga-main;
   background-color: rosybrown;
   overflow: auto;
 }
@@ -225,20 +224,20 @@ section main {
       grid-template-columns: 1fr;
   -ms-grid-rows: auto 1fr;
       grid-template-rows: auto 1fr;
-      grid-template-areas: "navbar" "main";
+      grid-template-areas: "ga-navbar" "ga-main";
 }
 
 .aside-and-main {
   -ms-grid-columns: auto 1fr;
       grid-template-columns: auto 1fr;
-      grid-template-areas: "aside main";
+      grid-template-areas: "ga-aside ga-main";
 }
 
 @media all and (max-width: 960px) {
   .aside-and-main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "main";
+        grid-template-areas: "ga-main";
   }
 }
 
@@ -247,7 +246,7 @@ section main {
       grid-template-columns: auto 1fr;
   -ms-grid-rows: auto 1fr;
       grid-template-rows: auto 1fr;
-      grid-template-areas: "navbar navbar" "aside main";
+      grid-template-areas: "ga-navbar ga-navbar" "ga-aside ga-main";
 }
 
 @media all and (max-width: 960px) {
@@ -256,7 +255,7 @@ section main {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto 1fr;
         grid-template-rows: auto 1fr;
-        grid-template-areas: "navbar" "main";
+        grid-template-areas: "ga-navbar" "ga-main";
   }
 }
 
@@ -317,5 +316,22 @@ strong {
 
 .block:last-child {
   width: 75%;
+}
+
+.yo-short {
+  margin-bottom: 0.75em;
+  aspect-ratio: 16 / 2;
+  background-color: brown;
+  -webkit-transition: aspect-ratio 1s ease-out;
+  transition: aspect-ratio 1s ease-out;
+}
+
+.yo-short:hover {
+  aspect-ratio: 16 / 2.4;
+}
+
+.yo-long {
+  aspect-ratio: 16 / 4;
+  background-color: chocolate;
 }
 /*# sourceMappingURL=style.css.map */

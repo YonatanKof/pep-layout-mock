@@ -29,10 +29,10 @@ section {
 		background-color: tan;
 		font-size: 0.95em;
 		color: rgba(#000000, 0.75);
-		grid-area: navbar;
+		grid-area: ga-navbar;
 	}
 	aside {
-		grid-area: aside;
+		grid-area: ga-aside;
 		background-color: tomato;
 		min-width: 10em;
 		overflow: auto;
@@ -41,8 +41,7 @@ section {
 		}
 	}
 	main {
-		grid-area: main;
-		overflow: hidden;
+		grid-area: ga-main;
 		background-color: rosybrown;
 		overflow: auto;
 	}
@@ -54,23 +53,23 @@ section {
 .only-main {
 	grid-template-columns: 1fr;
 	grid-template-rows: auto 1fr;
-	grid-template-areas: "navbar" "main";
+	grid-template-areas: "ga-navbar" "ga-main";
 }
 .aside-and-main {
 	grid-template-columns: auto 1fr;
-	grid-template-areas: "aside main";
+	grid-template-areas: "ga-aside ga-main";
 	@media all and (max-width: $width-md) {
 		grid-template-columns: 1fr;
-		grid-template-areas: "main";
+		grid-template-areas: "ga-main";
 	}
 }
 .navbar-and-aside-and-main {
 	grid-template-columns: auto 1fr;
 	grid-template-rows: auto 1fr;
-	grid-template-areas: "navbar navbar" "aside main";
+	grid-template-areas: "ga-navbar ga-navbar" "ga-aside ga-main";
 	@media all and (max-width: $width-md) {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto 1fr;
-		grid-template-areas: "navbar" "main";
+		grid-template-areas: "ga-navbar" "ga-main";
 	}
 }
