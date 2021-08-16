@@ -3,6 +3,7 @@
 
 body {
 	font-family: monospace;
+	line-height: 1.2;
 }
 img {
 	height: 3em;
@@ -24,10 +25,10 @@ p {
 form {
 	margin-bottom: 0.75em;
 }
-hr{
+hr {
 	margin-block: 0.75em;
 }
-strong{
+strong {
 	font-weight: bolder;
 }
 .head-div {
@@ -44,16 +45,25 @@ strong{
 		width: 75%;
 	}
 }
-.yo-short{
+.yo-short {
 	margin-bottom: 0.75em;
 	aspect-ratio: 16 / 2;
 	background-color: brown;
-	transition: aspect-ratio 1s ease-out, ;
-	&:hover{
+	transition: aspect-ratio 1s ease-out;
+	&:hover {
 		aspect-ratio: 16 / 2.4;
 	}
 }
-.yo-long{
+.yo-long {
 	aspect-ratio: 16 / 4;
 	background-color: chocolate;
+}
+.overlay {
+	position: absolute;
+	z-index: 6000;
+	background-color: rgba(0, 0, 0, 0.5);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
