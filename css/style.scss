@@ -55,7 +55,7 @@ strong {
 	}
 }
 .yo-long {
-	aspect-ratio: 16 / 4;
+	aspect-ratio: 2 / 1;
 	background-color: chocolate;
 }
 .overlay {
@@ -66,4 +66,21 @@ strong {
 	right: 0;
 	top: 0;
 	bottom: 0;
+}
+.cross-hatch {
+	background: 
+		repeating-linear-gradient(
+			45deg,
+			rgba(red, 0),
+			rgba(red, 0) .85rem,
+			rgba(red, 0.8) 0.85rem,
+			rgba(red, 0.8) 1rem,	
+		),
+		repeating-linear-gradient(
+			-45deg,
+			rgba(red, 0),
+			rgba(red, 0) .85rem,
+			rgba(red, 0.8) 0.85rem,
+			rgba(red, 0.8) 1rem,	
+		);
 }
