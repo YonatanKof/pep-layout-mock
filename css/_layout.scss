@@ -19,14 +19,14 @@ header {
 	z-index: 10000;
 	box-shadow: $shadow;
 	position: relative;
-	.edges{
+	.edges {
 		height: var(--header-h);
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
 	}
-	.center{
+	.center {
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -37,6 +37,10 @@ header {
 		width: 3em;
 		height: 3em;
 	}
+}
+.header-flow {
+	display: flex;
+	justify-content: space-between;
 }
 section {
 	h1,
@@ -99,7 +103,7 @@ section {
 		grid-template-areas: "ga-navbar" "ga-main";
 	}
 }
-.gridd{
+.gridd {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
@@ -118,7 +122,6 @@ section {
 	@media all and (max-width: $width-sm) {
 		flex-direction: column;
 	}
-
 }
 
 .section-content {

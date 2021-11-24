@@ -191,6 +191,15 @@ header .center {
   height: 3em;
 }
 
+.header-flow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 section {
   display: -ms-grid;
   display: grid;
