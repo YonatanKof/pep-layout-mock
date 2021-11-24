@@ -99,22 +99,34 @@ section {
 		grid-template-areas: "ga-navbar" "ga-main";
 	}
 }
-
+.gridd{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
 .grid-content {
 	position: relative;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	h1 {
+		margin: 0;
+	}
 	gap: 1rem;
 	& > div {
 		z-index: 1;
 	}
+	@media all and (max-width: $width-sm) {
+		flex-direction: column;
+	}
+
 }
 
 .section-content {
-	height: 12rem;
+	width: 100%;
+	height: 6rem;
 	background-color: antiquewhite;
 	border-radius: 0.25rem;
-	padding: 1rem;
+	padding: 0.5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
