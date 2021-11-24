@@ -134,3 +134,13 @@ section {
 	justify-content: center;
 	align-items: center;
 }
+.this-media-q {
+	margin-block: 1rem;
+	div {
+		height: 10rem;
+		background-color: aqua;
+		@media (min-width: 300px) and (max-width: 500px) {
+			background-color: red;
+		}
+	}
+}

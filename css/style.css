@@ -353,6 +353,21 @@ section main {
           align-items: center;
 }
 
+.this-media-q {
+  margin-block: 1rem;
+}
+
+.this-media-q div {
+  height: 10rem;
+  background-color: aqua;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .this-media-q div {
+    background-color: red;
+  }
+}
+
 body {
   font-family: monospace;
   line-height: 1.2;
