@@ -163,12 +163,35 @@ section {
 		}
 	}
 }
-.repeat-group-example { // the score card parent 
+.repeat-group-example {
+	// the score card parent
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+	grid-template-rows: repeat(auto-fill, minmax(12rem, 1fr));
 	gap: 1rem;
-	div { // the score card
+	div {
+		// the score card
 		height: 4rem;
 		background-color: aqua;
+	}
+}
+.setting-grid {
+	display: flex;
+	max-width: 64rem;
+	// display: grid;
+	// grid-template-columns: 1fr 1fr;
+	// grid-template-areas: "first third" "second third";
+	// grid-gap: 1rem;
+	padding-top: 1rem;
+	gap: 1rem;
+	span{
+		display: block;
+		padding: 1rem;
+		background-color: bisque;
+		&:first-child {
+			margin-bottom: 1rem;
+		}
+	}
+	div{
+		width: 100%;
 	}
 }

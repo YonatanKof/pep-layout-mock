@@ -401,14 +401,37 @@ section main {
 .repeat-group-example {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(12rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  -ms-grid-rows: (minmax(12rem, 1fr))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(12rem, 1fr));
   gap: 1rem;
 }
 
 .repeat-group-example div {
   height: 4rem;
   background-color: aqua;
+}
+
+.setting-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 64rem;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+.setting-grid span {
+  display: block;
+  padding: 1rem;
+  background-color: bisque;
+}
+
+.setting-grid span:first-child {
+  margin-bottom: 1rem;
+}
+
+.setting-grid div {
+  width: 100%;
 }
 
 body {
