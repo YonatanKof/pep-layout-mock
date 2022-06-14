@@ -9,6 +9,15 @@ img {
 	height: 3em;
 	width: 3em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: cursive;
+
+}
 h1 {
 	font-size: 2em;
 }
@@ -68,19 +77,12 @@ strong {
 	bottom: 0;
 }
 .cross-hatch {
-	background: 
-		repeating-linear-gradient(
+	background: repeating-linear-gradient(
 			45deg,
 			rgba(red, 0),
-			rgba(red, 0) .85rem,
+			rgba(red, 0) 0.85rem,
 			rgba(red, 0.8) 0.85rem,
-			rgba(red, 0.8) 1rem,	
+			rgba(red, 0.8) 1rem
 		),
-		repeating-linear-gradient(
-			-45deg,
-			rgba(red, 0),
-			rgba(red, 0) .85rem,
-			rgba(red, 0.8) 0.85rem,
-			rgba(red, 0.8) 1rem,	
-		);
+		repeating-linear-gradient(-45deg, rgba(red, 0), rgba(red, 0) 0.85rem, rgba(red, 0.8) 0.85rem, rgba(red, 0.8) 1rem);
 }

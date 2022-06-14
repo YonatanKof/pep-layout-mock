@@ -401,8 +401,8 @@ section main {
 .repeat-group-example {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (minmax(12rem, 1fr))[auto-fill];
-      grid-template-rows: repeat(auto-fill, minmax(12rem, 1fr));
+  -ms-grid-columns: (minmax(12rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
   gap: 1rem;
 }
 
@@ -424,6 +424,7 @@ section main {
   display: block;
   padding: 1rem;
   background-color: bisque;
+  border-radius: 0.25rem;
 }
 
 .setting-grid span:first-child {
@@ -434,6 +435,15 @@ section main {
   width: 100%;
 }
 
+@media all and (max-width: 640px) {
+  .setting-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body {
   font-family: monospace;
   line-height: 1.2;
@@ -442,6 +452,15 @@ body {
 img {
   height: 3em;
   width: 3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: cursive;
 }
 
 h1 {
