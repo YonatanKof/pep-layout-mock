@@ -145,6 +145,18 @@ table {
   --header-h: 4rem;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  height: inherit;
+}
+
 .wrapper {
   display: -ms-grid;
   display: grid;
@@ -203,7 +215,6 @@ header .center {
 section {
   display: -ms-grid;
   display: grid;
-  height: calc(100vh - var(--header-h));
 }
 
 section h1,
@@ -434,6 +445,79 @@ section main {
   width: 100%;
 }
 
+.main-sect {
+  height: inherit;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+}
+
+.main-sect h2 {
+  margin: 0;
+}
+
+.main-sect .sect-01 {
+  background-color: salmon;
+}
+
+.main-sect .sect-02 {
+  background-color: thistle;
+}
+
+.main-sect .display-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.1rem dashed rgba(0, 0, 0, 0.75);
+  margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.main-sect .block-01 {
+  height: 6rem;
+}
+
+.main-sect .section-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1rem;
+}
+
+.main-sect .section-grid span {
+  position: absolute;
+  inset: 0;
+}
+
+.main-sect .section-grid .item {
+  min-height: 10rem;
+  background-color: rgba(56, 140, 140, 0.25);
+  width: calc((100% - (1rem * 3)) / 4);
+  height: calc((100% - (1rem * 1)) / 2);
+  margin: unset;
+  padding: unset;
+}
+
+@media all and (max-width: 960px) {
+  .main-sect .section-grid .item {
+    width: calc((100% - (1rem * 1)) / 2);
+    height: calc((100% - (1rem * 3)) / 4);
+  }
+}
+
 body {
   font-family: monospace;
   line-height: 1.2;
@@ -442,6 +526,15 @@ body {
 img {
   height: 3em;
   width: 3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: cursive;
 }
 
 h1 {
