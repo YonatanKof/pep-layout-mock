@@ -7,6 +7,14 @@ $shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 0px 20px 10px rgba(0, 0, 0, 0
 	--space-sm: 1rem;
 	--header-h: 4rem;
 }
+html {
+	height: 100%;
+}
+body {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	height: inherit;
+}
 .wrapper {
 	display: grid;
 	grid-template-rows: auto 1fr;
@@ -49,7 +57,7 @@ section {
 		margin-bottom: 0.5em;
 	}
 	display: grid;
-	height: calc(100vh - var(--header-h));
+	// height: calc(100vh - var(--header-h));
 	nav {
 		background-color: tan;
 		font-size: 0.95em;
@@ -179,7 +187,7 @@ section {
 	max-width: 64rem;
 	padding-top: 1rem;
 	gap: 1rem;
-	span{
+	span {
 		display: block;
 		padding: 1rem;
 		background-color: bisque;
@@ -188,10 +196,63 @@ section {
 			margin-bottom: 1rem;
 		}
 	}
-	div{
+	div {
 		width: 100%;
 	}
 	@media all and (max-width: $width-sm) {
 		flex-direction: column;
+	}
+}
+.main-sect {
+	// min-height: calc(100vh - var(--header-h));
+	height: inherit;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	h2 {
+		margin: 0;
+	}
+	.sect-01 {
+		background-color: salmon;
+	}
+	.sect-02 {
+		background-color: thistle;
+	}
+	.display-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 0.1rem dashed rgba(#000000, 0.75);
+		margin: 1rem;
+		background-color: rgba(#ffffff, 0.25);
+	}
+	.block-01 {
+		height: 6rem;
+	}
+	.block-02 {
+		// height: 50rem;
+		// height: 6rem;
+	}
+	.section-grid {
+		display: flex;
+		position: relative;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 1rem;
+		span{
+			position: absolute;
+			inset: 0;
+		}
+		.item {
+			min-height: 10rem;
+			background-color: rgba(56, 140, 140, 0.25);
+			width: calc((100% - (1rem * 3)) / 4);
+			height: calc((100% - (1rem * 1)) / 2);
+			margin: unset;
+			padding: unset;
+			@media all and (max-width: $width-md) {
+				width: calc((100% - (1rem * 1)) / 2);
+				height: calc((100% - (1rem * 3)) / 4);
+			}
+		}
 	}
 }
